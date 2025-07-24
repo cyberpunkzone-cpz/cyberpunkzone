@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cyberpunk Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: black;
+      color: #00ffe1;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px #0ff, 0 0 30px #0ff;
+      animation: glitch 2s infinite;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+    .btn {
+      margin-top: 40px;
+      padding: 12px 24px;
+      border: 1px solid #00ffe1;
+      background: transparent;
+      color: #00ffe1;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00ffe1;
+      color: black;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 0 0 10px #0ff; }
+      20% { text-shadow: 2px 0 red; }
+      40% { text-shadow: -2px 0 blue; }
+      60% { text-shadow: 2px 2px green; }
+      80% { text-shadow: -2px -2px magenta; }
+      100% { text-shadow: 0 0 10px #0ff; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Cyberpunk Zone</h1>
-  <p>Website is now live!</p>
+  <h1>Cyberpunk Zone</h1>
+  <p>Where Neon Shadows Come Alive.</p>
+  <a href="#" class="btn">Enter the Zone</a>
 </body>
 </html>
